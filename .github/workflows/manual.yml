@@ -32,7 +32,8 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.TOKEN }}
-          file: dist/
+          file: ./dist/index.html
           asset_name: dist
           tag: v.1.0-beta
+          overwrite: true
           
