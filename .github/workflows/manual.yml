@@ -27,7 +27,8 @@ jobs:
         run: npm ci
       - name: Build code
         run: npm run build --if-present
-        
+      - name: file list
+        run: ls
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
